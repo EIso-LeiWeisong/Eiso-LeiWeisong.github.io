@@ -152,6 +152,113 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vue样式文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="table-通用样式"><a href="#table-通用样式" class="headerlink" title="table 通用样式"></a>table 通用样式</h2><p>#I.所有模块的背景颜色为#f3faff 线条为#dddddd<br>#II.所有模块的字号是14px  字体(参考42发起选型的字体)</p>
+<h1 id="1-页边距"><a href="#1-页边距" class="headerlink" title="1.页边距"></a>1.页边距</h1><pre><code>1.上下边距 10px
+2.左右边距 20px
+</code></pre>
+<h1 id="2-布局和模块的样式"><a href="#2-布局和模块的样式" class="headerlink" title="2.布局和模块的样式"></a>2.布局和模块的样式</h1><pre><code>1.分为三个模块
+    I.所有模块的背景都距离边框2px(背景色为)
+    II.如果搜索条件少,就放到功能模块右顶齐;
+    III.如果搜索条件多,就放到该编辑栏。
+
+    1.功能模块(按钮模块)
+        1.功能类按钮颜色：#2179cb
+        2.取消类按钮颜色：白色
+        3.提交类按钮颜色：绿色
+        4.删除类按钮颜色：红色
+        5.按钮栏底色：F3FAFF
+        6.按钮高度：30px
+    2.展示模块(一般用来放输入框和名称)
+        1.名称的第一字和下面表格的复选框对齐(建议不要用el-col布局去写这个布局，因为在分辨率为1366*768显示正常1920*1080上会显示有问题)
+        2.名称和输入框的距离 2px 
+        3.每组(名称和输入框的组合)距离左边为2vh(我的现在是这样，如果有其它的也可以调整)
+    3.表格模块
+        1.表整体
+            1.表格整体高度是固定高度(如果直接用定高设置会出现操作栏偏移问题，可以参考flex布局)
+            2.表格头的高度为36.719 数据行为29
+            3.表格如果需要复选框，将表头的复选框和表数据的复选框对齐
+            4.操作栏的按钮不需要图标
+            5.合计栏要出现
+                1.总条数；
+                2.每页条数如果条数超过100(20,40,100,All),否则(20,40,All)
+                3.分为多少页
+        2.表头
+            1.要和表格偶数行的背景颜色一致
+            2.字体要加粗(组件应该是做好的加粗，要是没有就自己加上)
+            3.行高度37px
+        3.表数据
+            1.行高度 30px
+            2.行点击事件触发复选框的选中事件
+            3.斑马线式奇偶行
+            4.选中行背景色#FFFACD
+        4.表合计栏
+            1.每页多少行显示为每页num行,num是自己选择
+            2.每页多少行的每页和行字距离右边5px
+</code></pre>
+<h2 id="dialog-通用样式"><a href="#dialog-通用样式" class="headerlink" title="dialog 通用样式"></a>dialog 通用样式</h2><pre><code>1.弹框的头和尾都得有背景颜色，颜色为#f8f8f8
+2.弹框必须是可以拖动的
+3.表尾的按钮居中对齐 确认按钮为绿色  取消为白色
+4.弹窗的头部标题为上下剧中 样式为padding: 20px 20px 20px
+5.弹窗的显示隐藏只能通过右上角x和取消来决定
+</code></pre>
+<h2 id="el-tree-的样式"><a href="#el-tree-的样式" class="headerlink" title="el-tree 的样式"></a>el-tree 的样式</h2><pre><code>1.节点加图标，如果节点下没有子节点 不用图标
+2.展开时父节点是-，关闭是+，默认是全部展开
+3.选中节点的背景颜色#FFFACD
+4.树型结构得做自动滚动条，防止显示出问题
+</code></pre>
+<h2 id="el-button-的样式"><a href="#el-button-的样式" class="headerlink" title="el-button 的样式"></a>el-button 的样式</h2><pre><code>1.按钮font-size为14px
+2.按钮规格为small
+3.两按钮之间间隔为5px
+4.按钮距离外边框1px
+        
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/02/vue%E6%A0%B7%E5%BC%8F%E6%96%87%E6%A1%A3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-第一篇博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
